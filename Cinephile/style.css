@@ -1,0 +1,92 @@
+*, html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    user-select: none;
+    background-color: #000;
+}
+
+header
+{
+    height: 5em;
+    background: #000;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 1.0);
+    position: fixed;
+}
+
+header > input
+{
+    height: 30%;
+    margin: 2em 1em;
+    border-radius: 10px;
+}
+
+header > input::placeholder
+{
+    transform: translateX(5%);
+}
+
+header > input::first-line
+{
+    transform: translateX(5%);
+}
+
+.home{
+    max-width: auto;
+    max-height: 100%;
+    margin: 1em 1em;
+    cursor: pointer;
+}
+
+nav > ul{
+    display: flex;
+}
+
+ul > *{
+    margin: 1em;
+    font-size: 1.5em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    cursor: pointer;
+}
+
+ul > *:hover
+{
+    color: rgb(255, 57, 57);
+}
+
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: translateY(8em);
+}
+
+.movie
+{
+    width: 15em;
+    margin: 3em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.movie > img{
+    width: 18em;
+    height: auto;
+}
+
+.movie > *{
+    margin-top: .5em;
+}
